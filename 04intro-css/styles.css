@@ -1,0 +1,270 @@
+/* SaveurQuest External Stylesheet - styles.css */
+/* Mindy Martin - Unit 04 CSS Assignment */
+
+/* Body styling */
+body {
+    font-family: "Fira Sans", sans-serif;
+    margin: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #708090;
+    padding: 1rem 10px;
+    margin-bottom: 20px;
+}
+
+header span {
+    color: #f5f5dc;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+header p {
+    color: #f5f5dc;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #d4af37;
+    border: 3px solid #8b7355;
+    border-radius: 10px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0 10px;
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: .83rem 1rem;
+    min-height: 48px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #2f2f2f;
+    font-weight: 700;
+}
+
+nav li.active a {
+    background-color: #708090;
+    color: #f5f5dc;
+}
+
+nav li a:hover {
+    background-color: #8b7355;
+    color: white;
+}
+
+/* Main content styling */
+main {
+    padding: 1rem 10px;
+}
+
+main h1 {
+    color: #708090;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+main h2 {
+    color: #8b7355;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .2rem;
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 5px;
+}
+
+main p {
+    margin: 0 0 1rem 0;
+    color: #333;
+}
+
+main ol {
+    padding: .5rem 30px;
+    background-color: #f5f5dc;
+    margin: 1rem 0;
+}
+
+main ol li {
+    margin-bottom: .5rem;
+}
+
+main dl {
+    background-color: #f5f5dc;
+    padding: 1rem;
+    border-radius: 10px;
+    border-left: 6px solid #d4af37;
+}
+
+main dl dt {
+    font-weight: 700;
+    color: #708090;
+    margin-top: 1rem;
+}
+
+main dl dt:first-child {
+    margin-top: 0;
+}
+
+main dl dd {
+    margin: 0 0 1rem 20px;
+    color: #333;
+    font-style: italic;
+}
+
+main ul {
+    list-style-type: square;
+    padding-left: 2rem;
+    margin: 1rem 0;
+}
+
+main ul li {
+    margin-bottom: .5rem;
+    line-height: 125%;
+}
+
+main strong {
+    font-weight: 700;
+    color: #708090;
+}
+
+main em {
+    font-weight: 500;
+    font-style: italic;
+    color: #8b7355;
+}
+
+main address {
+    font-style: normal;
+    background-color: #f5f5dc;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 2px solid #a9a9a9;
+    width: 250px;
+}
+
+main a {
+    color: #8b7355;
+}
+
+main a:hover {
+    color: #d4af37;
+}
+
+main a[href^="tel:"] {
+    display: inline-block;
+    padding: 12px 20px;
+    min-height: 48px;
+    background-color: #d4af37;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 3px solid #8b7355;
+    font-weight: 700;
+}
+
+main a[href^="tel:"]:hover {
+    background-color: #8b7355;
+    color: white;
+}
+
+/* Class styling */
+.home-special {
+    background: linear-gradient(45deg, #d4af37, #f5f5dc);
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.home-intro {
+    font-size: 1.3rem;
+    color: #8b7355;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 16px 32px;
+    min-height: 48px;
+    background-color: #d4af37;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    border: 3px solid #8b7355;
+}
+
+.cta-button:hover {
+    background-color: #8b7355;
+    color: white;
+}
+
+.feature-box {
+    background-color: #f5f5dc;
+    border: 2px solid #a9a9a9;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-left: 6px solid #d4af37;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #8b7355;
+    background-color: #f5f5dc;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-left: 4px solid #d4af37;
+}
+
+.adventure-card {
+    background-color: #f5f5dc;
+    border: 2px solid #a9a9a9;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.margin-bottom-lg {
+    margin-bottom: 2rem;
+}
+
+.highlight-text {
+    background-color: #f5f5dc;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+/* Footer styling */
+footer {
+    background-color: #708090;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: .8rem;
+    color: #f5f5dc;
+    letter-spacing: 2px;
+}

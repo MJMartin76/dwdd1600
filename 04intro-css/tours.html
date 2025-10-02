@@ -3,20 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Mindy Martin">
-    <meta name="description"
-        content="Learn about SaveurQuest founder Mindy Martin and our mission to provide authentic international culinary and outdoor adventures. Contact information and company details.">
+    <meta name="description" content="Browse SaveurQuest's premium international culinary and outdoor adventure tours. Book guided food and nature experiences in destinations worldwide.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>International Tours - SaveurQuest Adventures</title>
-
-    <!-- Google Fonts API Implementation -->
+    
+    <!-- Google Fonts API Implementation - Fira Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@400;700;900&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles.css">
-</head> 
+</head>
 <body>
     <header>
         <span>SaveurQuest</span>
@@ -26,7 +23,7 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="tours.html">Tours</a></li>
+            <li><a href="tours.html" class="active">Tours</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
@@ -36,9 +33,10 @@
         <h1>International Culinary and Adventure Tours</h1>
         
         <h2>Planned Tour Experiences</h2>
-        <p>Each SaveurQuest tour is being carefully crafted to provide authentic cultural experiences through food and outdoor exploration. Our small group approach will ensure personalized attention and access to local secrets.</p>
+        <div class="feature-box">
+            <p>Each SaveurQuest tour is being carefully crafted to provide authentic cultural experiences through food and outdoor exploration. Our small group approach will ensure personalized attention and access to local secrets.</p>
+        </div>
 
-        
         <h2>Booking Process</h2>
         <p>Follow these simple steps to secure your culinary adventure:</p>
         <ol>
@@ -49,7 +47,10 @@
             <li>Meet your guide for the experience of a lifetime</li>
         </ol>
 
-        
+        <div class="text-center margin-bottom-lg">
+            <a href="tel:+14355551234" class="cta-button">Start Booking Process</a>
+        </div>
+
         <h2>Tour Terminology Guide</h2>
         <dl>
             <dt>Culinary Immersion</dt>
@@ -62,14 +63,18 @@
             <dd>Meaningful interactions with local communities, learning about food traditions, agricultural practices, and the cultural significance of regional cuisine through guided conversations and participation.</dd>
         </dl>
 
-        <p>Our planned tours will combine the <em>thrill of discovery</em> with the comfort of expert guidance. Each destination will offer unique flavors and landscapes that will expand your culinary horizons and create lasting memories.</p>
+        <div class="adventure-card">
+            <p>Our planned tours will combine the <em>thrill of discovery</em> with the comfort of expert guidance. Each destination will offer unique flavors and landscapes that will expand your culinary horizons and create lasting memories.</p>
+        </div>
 
-        <p>Tours will include accommodation, most meals, professional guides, and all planned activities. <strong>Transportation</strong> to and from international airports will be included in tour pricing.</p>
+        <p class="highlight-text">Tours will include accommodation, most meals, professional guides, and all planned activities.</p> 
+        <p><strong>Transportation</strong> to and from international airports will be included in tour pricing.</p>
     </main>
 
+    <!-- HTML comment -->
     <footer>
         <p>&copy; 2025 Flavors on the Move LLC (DBA SaveurQuest). All rights reserved.<br>
-    </p>
+        </p>
     </footer>
 </body>
 </html>
