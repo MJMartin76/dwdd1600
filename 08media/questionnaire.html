@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mindy Martin">
+    <meta name="description" content="Share your travel preferences with SaveurQuest. Help us plan the perfect culinary and outdoor adventure tour for you.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Survey - SaveurQuest Adventures</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.ico">
+
+    <!-- Google Fonts API Implementation - Fira Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/sq_header_logo.png" alt="SaveurQuest Logo" width="420" height="100">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Help Us Plan Your Adventure</h1>
+        
+        <div class="home-special">
+            🎁 Complete our survey for a chance to win a spot on our 2026 France tour!
+        </div>
+
+        <div class="feature-box">
+            <p>Your input is invaluable as we design our inaugural tours. Take a few minutes to share your travel preferences, and you'll be entered to win a complimentary spot on one of our France adventures in 2026!</p>
+        </div>
+
+        <h2>France Adventure Survey</h2>
+        <p>Please fill out the form below. Fields marked with * are required.</p>
+
+        <form method="get" class="questionnaire" action="thanks.html" id="survey-form">
+            <fieldset>
+                <legend>Your Information</legend>
+                <label>First Name *
+                    <input type="text" name="fname" required>
+                </label>
+                <label>Last Name *
+                    <input type="text" name="lname" required>
+                </label>
+                <label>Phone Number *
+                    <input type="tel" name="phone" required placeholder="(435) 555-1234">
+                </label>
+                <label>Email Address *
+                    <input type="email" name="email" required placeholder="your@email.com">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Travel Timing</legend>
+                <p style="margin: 0 0 0.5rem 0; font-size: 0.95rem; color: #6E4D7A;">When would you prefer to travel?</p>
+                <label>
+                    <input type="radio" name="timing" value="Spring" checked> Spring 2026 (March - May)
+                </label>
+                <label>
+                    <input type="radio" name="timing" value="Summer"> Summer 2026 (June - August)
+                </label>
+                <label>
+                    <input type="radio" name="timing" value="Fall"> Fall 2026 (September - November)
+                </label>
+                <label>
+                    <input type="radio" name="timing" value="Flexible"> Flexible - any season works
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Destination Interests</legend>
+                <p style="margin: 0 0 0.5rem 0; font-size: 0.95rem; color: #6E4D7A;">Which French regions interest you? (Select all that apply)</p>
+                <label>
+                    <input type="checkbox" name="paris" value="chosen"> Paris & Île-de-France
+                </label>
+                <label>
+                    <input type="checkbox" name="provence" value="chosen"> Provence & Lavender Fields
+                </label>
+                <label>
+                    <input type="checkbox" name="riviera" value="chosen"> French Riviera & Mediterranean Coast
+                </label>
+                <label>
+                    <input type="checkbox" name="loire" value="chosen"> Loire Valley & Châteaux
+                </label>
+                <label>
+                    <input type="checkbox" name="burgundy" value="chosen"> Burgundy & Dijon
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Travel Preferences</legend>
+                <label>What type of accommodation do you prefer?
+                    <select name="accommodation">
+                        <option value="none">Please Select</option>
+                        <option value="villa-private">Private room in a villa</option>
+                        <option value="villa-shared">Shared room in a villa</option>
+                        <option value="hotel">Boutique hotel</option>
+                        <option value="flexible">Flexible - whatever works best</option>
+                    </select>
+                </label>
+                
+                <label>Meal preferences:
+                    <select name="meals">
+                        <option value="none">Please Select</option>
+                        <option value="full">All meals included (breakfast & dinner)</option>
+                        <option value="dinner">Dinner only</option>
+                        <option value="minimal">Occasional group meals</option>
+                        <option value="flexible">Flexible</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Budget Information</legend>
+                <label>What is your budget for a 2-week trip? (per person, including accommodations and most meals)
+                    <select name="budget">
+                        <option value="none">Please Select</option>
+                        <option value="low">$3,000 - $5,000</option>
+                        <option value="mid">$5,000 - $7,500</option>
+                        <option value="high">$7,500 - $10,000</option>
+                        <option value="luxury">$10,000 or more</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information (Optional)</legend>
+                <label for="comments">Tell us about your travel interests, dietary needs, or anything else we should know:</label>
+                <textarea id="comments" name="comments" placeholder="Share any special interests, dietary restrictions, accessibility needs, or questions..."></textarea>
+            </fieldset>
+
+            <input type="submit" value="Submit Survey">
+        </form>
+
+        <div class="adventure-card" style="margin-top: 2rem;">
+            <p><em>Thank you for helping us create the perfect culinary adventure experience! We'll review your responses and contact you with more information about our upcoming tours and the prize drawing.</em></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Flavors on the Move LLC (DBA SaveurQuest). All rights reserved.<br>
+        Your Adventure Awaits</p>
+    </footer>
+</body>
+</html>
