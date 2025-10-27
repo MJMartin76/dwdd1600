@@ -1,0 +1,529 @@
+/* Budget Vacations External Stylesheet - styles.css */
+/* Tropical Beach Color Palette */
+
+/* Box Model - Border Box for all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: #F0F8FF;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #2C5F7C;
+    padding: 1rem 2rem;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #F0F8FF;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+}
+
+header p {
+    color: #B8E0F6;
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 400;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #1A4459;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav a {
+    color: #F0F8FF;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #2C5F7C;
+}
+
+nav a.current {
+    background-color: #4A9C6D;
+    font-weight: 700;
+}
+
+/* Main content styling */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* Hero Image styling */
+.hero-image {
+    width: calc(100% + 4rem);
+    margin: -2rem -2rem 2rem -2rem;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+/* Headings */
+main h1 {
+    color: #2C5F7C;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+main h2 {
+    color: #1A4459;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 2.5rem 0 1rem 0;
+    border-bottom: 3px solid #4A9C6D;
+    padding-bottom: 8px;
+}
+
+/* Paragraphs */
+main p {
+    margin: 0 0 1rem 0;
+    color: #333333;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+main strong {
+    font-weight: 700;
+    color: #2C5F7C;
+}
+
+main em {
+    font-style: italic;
+    color: #4A9C6D;
+}
+
+/* Links */
+main a {
+    color: #4A9C6D;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+main a:hover {
+    color: #2C5F7C;
+    text-decoration: underline;
+}
+
+/* Lists */
+main ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 1.5rem 0;
+}
+
+main ul li {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    padding-left: 1.8rem;
+    position: relative;
+}
+
+main ul li:before {
+    content: "✈";
+    color: #4A9C6D;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+}
+
+/* Special boxes */
+.intro-box {
+    background-color: #E8F4F8;
+    border: 2px solid #2C5F7C;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-left: 6px solid #4A9C6D;
+}
+
+.intro-box p {
+    margin: 0;
+}
+
+.testimonial {
+    background-color: #FFF8E7;
+    border-left: 6px solid #FFB84D;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+}
+
+.testimonial strong {
+    color: #333333;
+    font-style: normal;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4A9C6D;        /* Green border */
+    background-color: #FFF8E7;    /* Light yellow - NEW! */
+}
+
+/* Gallery styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 2rem 0;
+    justify-content: center;
+}
+
+.gallery figure {
+    margin: 0;
+    width: 300px;
+    background-color: #E8F4F8;
+    padding: 12px;
+    border: 2px solid #2C5F7C;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.gallery figure:hover {
+    box-shadow: 0 8px 20px rgba(44, 95, 124, 0.3);
+}
+
+.gallery img {
+    width: 100%;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gallery figcaption {
+    font-size: 0.95rem;
+    text-align: center;
+    color: #2C5F7C;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* Video container - responsive */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: 2rem 0;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Packages section */
+.packages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 2rem 0;
+    justify-content: center;
+}
+
+.package {
+    width: 100%;
+    max-width: 350px;
+    background-color: #E8F4F8;
+    border: 2px solid #2C5F7C;
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.package:hover {
+    box-shadow: 0 8px 20px rgba(44, 95, 124, 0.3);
+}
+
+.package h3 {
+    color: #2C5F7C;
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+    font-weight: 600;
+}
+
+.package img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.package .price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #4A9C6D;
+    margin: 1rem 0;
+}
+
+/* Form styling */
+form {
+    max-width: 700px;
+    margin: 2rem auto;
+}
+
+fieldset {
+    border: 2px solid #2C5F7C;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: #F0F8FF;
+}
+
+legend {
+    font-size: 1.2rem;
+    color: #2C5F7C;
+    font-weight: 700;
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    margin: 1rem 0 0.5rem 0;
+    color: #333333;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #2C5F7C;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    background-color: white;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4A9C6D;
+}
+
+.radio-group {
+    margin: 1rem 0;
+}
+
+.radio-group label {
+    display: block;
+    margin: 0.5rem 0;
+    font-weight: 400;
+}
+
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #4A9C6D;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    min-height: 48px;
+}
+
+input[type="submit"]:hover {
+    background-color: #2C5F7C;
+}
+
+/* Thank you page styling */
+.thank-you {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.thank-you h2 {
+    color: #4A9C6D;
+}
+
+/* Footer styling */
+footer {
+    background-color: #2C5F7C;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer p {
+    margin: 0;
+    color: #F0F8FF;
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+/* MEDIA QUERIES - Desktop Navigation */
+@media screen and (min-width: 900px) {
+    /* Horizontal navigation for desktop */
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    nav li {
+        border-bottom: none;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    nav li:last-child {
+        border-right: none;
+    }
+    
+    nav a {
+        padding: 1rem 1.5rem;
+    }
+    
+    /* Adjust packages for desktop */
+    .packages {
+        justify-content: space-between;
+    }
+}
+
+/* Tablet adjustments */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    main h1 {
+        font-size: 2rem;
+    }
+    
+    main h2 {
+        font-size: 1.5rem;
+    }
+    
+    main {
+        padding: 1.5rem;
+    }
+    
+    .hero-image {
+        width: calc(100% + 3rem);
+        margin: -1.5rem -1.5rem 1.5rem -1.5rem;
+    }
+    
+    .gallery figure {
+        width: calc(50% - 12px);
+        min-width: 250px;
+    }
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 0.95rem;
+    }
+    
+    header {
+        padding: 1rem;
+    }
+    
+    header h1 {
+        font-size: 1.75rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+    
+    main h1 {
+        font-size: 1.75rem;
+    }
+    
+    main h2 {
+        font-size: 1.3rem;
+    }
+    
+    .hero-image {
+        width: calc(100% + 2rem);
+        margin: -1rem -1rem 1rem -1rem;
+    }
+    
+    .gallery figure {
+        width: 100%;
+    }
+    
+    .package {
+        width: 100%;
+    }
+}

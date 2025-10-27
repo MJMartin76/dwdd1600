@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Budget Vacations</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Google Fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Budget Vacations</h1>
+        <p>Affordable Travel Adventures for Everyone</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="video.html">Travel Videos</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="contact.html" class="current">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Contact Our Travel Experts</h1>
+        
+        <p>Ready to start planning your dream vacation? Fill out the form below and one of our travel experts will contact you within 24 hours. We're here to answer questions and help you book the perfect trip!</p>
+        
+        <p><em>* Required fields</em></p>
+
+        <form action="thankyou.html" method="get">
+            <fieldset>
+                <legend>Your Information</legend>
+                
+                <label for="fullname">Full Name: *</label>
+                <input type="text" id="fullname" name="fullname" required>
+                
+                <label for="email">Email Address: *</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number: *</label>
+                <input type="tel" id="phone" name="phone" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Travel Preferences</legend>
+                
+                <label for="destination">Where do you want to go?</label>
+                <select id="destination" name="destination" required>
+                    <option value="">-- Choose a Destination --</option>
+                    <option value="cancun">Cancun, Mexico</option>
+                    <option value="orlando">Orlando, Florida</option>
+                    <option value="caribbean">Caribbean Islands</option>
+                    <option value="costa-rica">Costa Rica</option>
+                    <option value="hawaii">Hawaii, USA</option>
+                    <option value="vegas">Las Vegas, Nevada</option>
+                    <option value="other">Other / Not Sure</option>
+                </select>
+                
+                <label>How many people are traveling?</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="travelers" value="1" required>
+                        Just me (1 person)
+                    </label>
+                    <label>
+                        <input type="radio" name="travelers" value="2">
+                        Couple (2 people)
+                    </label>
+                    <label>
+                        <input type="radio" name="travelers" value="3-5">
+                        Family (3-5 people)
+                    </label>
+                    <label>
+                        <input type="radio" name="travelers" value="6+">
+                        Large group (6 or more)
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Details</legend>
+                
+                <label for="comments">Questions or Special Requests:</label>
+                <textarea id="comments" name="comments" placeholder="Tell us about your travel dates, budget, or any questions you have..."></textarea>
+            </fieldset>
+
+            <input type="submit" value="Send My Request">
+        </form>
+
+        <h2>Other Ways to Reach Us</h2>
+        <p><strong>Phone:</strong> 1-800-555-1234<br>
+        Monday-Friday: 8am-8pm EST<br>
+        Saturday-Sunday: 9am-6pm EST</p>
+        
+        <p><strong>Email:</strong> info@budgetvacations.com<br>
+        We respond to all emails within 24 hours</p>
+        
+        <p><strong>Office Location:</strong><br>
+        123 Travel Street<br>
+        Travel, UT 84000</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Budget Vacations. All rights reserved.</p>
+        <p>Making travel affordable for everyone.</p>
+    </footer>
+</body>
+</html>
